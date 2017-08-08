@@ -36,7 +36,7 @@ def run_test_2(win, screen_res, number_of_frames=100):
     text.setAutoDraw(True)
     win.flip()
 
-    _, frames_times = run_test_1(win, number_of_frames)
+    _, frames_times = run_test_1(win, screen_res, number_of_frames)
 
     event.Mouse(visible=False, newPos=None, win=win)
     text.setAutoDraw(False)
@@ -135,4 +135,4 @@ def run_tests(tests_to_run, number_of_frames=100):
     print table
 
 functions_list = [run_test_1, run_test_2, run_test_3, run_test_4, run_test_5]
-run_tests(functions_list)
+run_tests(functions_list, 200)
