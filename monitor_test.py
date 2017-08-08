@@ -5,6 +5,8 @@ import random
 
 from screen import get_frame_rate, get_screen_res
 
+__author__ = 'ociepkam'
+
 
 def create_win(screen_color, show_mouse=True):
     screen_res = get_screen_res()
